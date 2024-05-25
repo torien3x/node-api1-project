@@ -20,7 +20,7 @@ server.put('/api/users/:id', async (req, res) => {
             } else {
              const updatedUser = await User.update(
                 req.params.id, 
-                req.sbody,
+                req.body,
             )
              res.status(200).json(updatedUser)
             }
